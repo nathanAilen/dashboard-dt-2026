@@ -350,6 +350,26 @@ svg.map path.sel{stroke:#fff;stroke-width:1.3;filter:drop-shadow(0 0 5px rgba(25
 
   /* Tên ST gọn hơn */
   #stMainTbl .nm{max-width:140px;font-size:11.5px}
+
+  /* ── Ẩn bản đồ SVG, giữ legend ── */
+  svg.map{display:none}
+  .mapwrap .maptitle{display:none}
+  .mapwrap{padding:6px 10px}
+
+  /* ── Rút gọn header "ĐG %HT LK" / "ĐG YOY LK" → "ĐG" ── */
+  #stMainTbl thead tr th:nth-child(8),
+  #stMainTbl thead tr th:nth-child(12),
+  #stTopTbl thead tr th:nth-child(7),
+  #stBotTbl thead tr th:nth-child(7){font-size:0}
+  #stMainTbl thead tr th:nth-child(8)::after,
+  #stMainTbl thead tr th:nth-child(12)::after,
+  #stTopTbl thead tr th:nth-child(7)::after,
+  #stBotTbl thead tr th:nth-child(7)::after{content:'ĐG';font-size:11px;font-weight:700}
+
+  /* ── Fix title Ngành hàng bị xuống dòng xấu ── */
+  .nh-block-title{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .nh-block-h{flex-wrap:nowrap}
+  .nh-handle{display:none}
 }
 
 </style>
