@@ -349,11 +349,17 @@ svg.map path.sel{stroke:#fff;stroke-width:1.3;filter:drop-shadow(0 0 5px rgba(25
   #stMainTbl tbody tr td:nth-child(10),#stMainTbl tbody tr td:nth-child(13){display:none}
 
   /* Tên ST gọn hơn */
-  #stMainTbl .nm{max-width:140px;font-size:11.5px}
-  /* Padding cột cho thoáng */
-  #stMainTbl th, #stMainTbl td{padding:6px 8px}
+  #stMainTbl .nm{max-width:120px;font-size:11.5px}
+  /* Override width cột mobile */
+  #stMainTbl{table-layout:auto}
+  #stMainTbl th, #stMainTbl td{padding:6px 4px}
+  #stMainTbl th:nth-child(2),#stMainTbl td:nth-child(2){width:32%}
+  #stMainTbl th:nth-child(7),#stMainTbl td:nth-child(7){width:14%}
+  #stMainTbl th:nth-child(8),#stMainTbl td:nth-child(8){width:16%;padding-left:8px}
+  #stMainTbl th:nth-child(11),#stMainTbl td:nth-child(11){width:14%}
+  #stMainTbl th:nth-child(12),#stMainTbl td:nth-child(12){width:16%;padding-left:8px}
   #stTopTbl th, #stTopTbl td,
-  #stBotTbl th, #stBotTbl td{padding:6px 8px}
+  #stBotTbl th, #stBotTbl td{padding:6px 5px}
 
   /* ── Ẩn bản đồ SVG, giữ legend ── */
   svg.map{display:none}
